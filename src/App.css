@@ -89,3 +89,81 @@ h1 {
 html, body {
   height: 100%;
 }
+
+/* Responsive Styles */
+
+/* Large Screens (Desktops & Laptops) */
+@media (min-width: 1024px) {
+  .info-cards {
+    width: 80%;
+    gap: 50px;
+  }
+
+  .card {
+    width: 300px;
+    padding: 40px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media (max-width: 1023px) {
+  .info-cards {
+    flex-direction: column;
+    gap: 40px;
+    top: 30%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .chart-container {
+    width: 90%;
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .info-cards {
+    flex-direction: column;
+    gap: 30px;
+    top: 25%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 15px;
+    margin-top: 80px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
